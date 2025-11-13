@@ -4,32 +4,7 @@ Dette projekt samler data relateret til byggebranchen gennem Python scripts.
 Data kan fx komme fra offentlige databaser, API’er eller web scraping.
 
 ## 📦 Struktur
-data-collection-construction/
-│
-├── src/
-│ ├── init.py
-│ ├── main.py
-│ ├── scraper.py # Web scraping / API-dataindsamling
-│ ├── parser.py # Databehandling og rensning
-│ ├── utils.py # Hjælpefunktioner (fx logging, tidsstempler)
-│ └── config.py # Indstillinger, API-nøgler, URL'er, etc.
-│
-├── data/
-│ ├── raw/ # Ubehandlet data
-│ └── processed/ # Renset og struktureret data
-│
-├── notebooks/
-│ └── exploration.ipynb # Til analyse og tests
-│
-├── tests/
-│ ├── test_scraper.py
-│ ├── test_parser.py
-│ └── test_utils.py
-│
-├── requirements.txt
-├── README.md
-├── .gitignore
-└── LICENSE
+<pre> ```text data-collection-construction/ │ ├── src/ │ ├── __init__.py │ ├── main.py │ ├── scraper.py # Web scraping / API-dataindsamling │ ├── parser.py # Databehandling og rensning │ ├── utils.py # Hjælpefunktioner (fx logging, tidsstempler) │ └── config.py # Indstillinger, API-nøgler, URL'er, etc. │ ├── data/ │ ├── raw/ # Ubehandlet data │ └── processed/ # Renset og struktureret data │ ├── notebooks/ │ └── exploration.ipynb # Til analyse og tests │ ├── tests/ │ ├── test_scraper.py │ ├── test_parser.py │ └── test_utils.py │ ├── requirements.txt ├── README.md ├── .gitignore └── LICENSE ``` </pre>
 
 ## ▶️ Kør projektet
 ```bash
