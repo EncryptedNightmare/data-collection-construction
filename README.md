@@ -41,11 +41,22 @@ pip install -r requirements.txt
 python src/main.py
 ```
 
-##  Krav
-Se requirements.txt for afhængigheder.
-
 ## ⚙️ Teknologier
 
 - Python 3.10+
 - pandas – til databehandling
 - groq/compound-mini
+
+## 🧠 Formål
+Projektet kan anvendes til:
+- Indsamling af data fra offentlige registre, udbudsdatabaser eller byggesites
+- Overvågning af trends i byggebranchen
+- Dataanalyse og rapportering
+
+## 📄 Licens
+Dette projekt er udgivet under MIT License.
+Du er velkommen til at bruge, ændre og dele koden frit.
+
+---
+### 🧰 **.gitignore**
+
