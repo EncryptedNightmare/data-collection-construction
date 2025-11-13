@@ -10,12 +10,18 @@ Data kan fx komme fra offentlige databaser, API’er eller web scraping.
 - `tests/` – Enkle enhedstests  
 
 ## ▶️ Kør projektet
-~bash
+```bash
 git clone https://github.com/<dit-brugernavn>/data-collection-construction.git
 cd data-collection-construction
 pip install -r requirements.txt
 python src/main.py
-~
+```
 
-##⚙️Krav
+## ⚙️ Krav
 Se requirements.txt for afhængigheder.
+
+## Teknologier
+
+- Python 3.10+
+- pandas – til databehandling
+- groq/compound-mini
