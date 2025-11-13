@@ -331,44 +331,6 @@ def analyze_company(client: Groq, company: dict, features: list[str]):
 
 # ========== MAIN ==========
 
-#def main(): # gammel main
-    #client = get_client()
-    features = load_features()
-    companies = load_companies()
-
-    csv_rows = []
-
-    for c in companies:
-        print(f"Analyserer: {c['name']} (ark: {c['sheet']})")
-        try:
-            rows = analyze_company(client, c, features)
-            csv_rows.extend(rows)
-        except Exception as e:
-            print(f"Fejl ved {c['name']}: {e}")
-
-    # Skriv direkte til CSV
-    csv_file = "results_compound.csv"
-    with open(csv_file, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(
-            f,
-            fieldnames=["Company", "Website", "Feature", "Relevance", "Reason"]
-        )
-        writer.writeheader()
-        writer.writerows(csv_rows)
-
-    print(f"\nCSV-fil gemt som: {csv_file}")
-
-    # Kort overblik i terminalen
-    print("\n=== OVERBLIK ===")
-    by_company = {}
-    for row in csv_rows:
-        by_company.setdefault((row["Company"], row["Website"]), []).append(row)
-
-    for (company, website), rows in by_company.items():
-        print(f"\n{company} - {website}")
-        for r in rows:
-            print(f"  - {r['Feature']}: {r['Relevance']} ({r['Reason']})")
-
 def main():
     features = load_features()
     companies = load_companies()
