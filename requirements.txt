@@ -1,0 +1,4 @@
+pandas
+groq
+openpyxl   # for reading .xlsx with pandas
+utils

@@ -23,13 +23,13 @@ def log_model_output(company_name: str, raw_text: str):
 # ========== KONFIGURATION ==========
 
 # 1) Features-fil
-FEATURES_FILE = "features.xlsx"      # eller .csv
+FEATURES_FILE = "data/raw/features.xlsx"      # eller .csv
 FEATURES_SHEET = "Features"          # hvis CSV -> brug None
 FEATURES_START_ROW = 0               # 0-baseret (0 = første række er header)
 FEATURES_COL_NAME = "Features"       # præcis kolonnenavnet i arket
 
 # 2) Virksomheder-fil (med flere ark, uden URLs)
-COMPANIES_FILE = "Branche_og_lead_kartotek.xlsx"
+COMPANIES_FILE = "data/raw/Branche_og_lead_kartotek.xlsx"
 
 # Ark-navne vi vil læse + hvilken række (0-baseret) vi starter fra i hver
 COMPANY_SHEET_CONFIG = {

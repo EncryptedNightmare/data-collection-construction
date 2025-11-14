@@ -6,14 +6,14 @@ MODEL_OUTPUT_FILE = f"logs/model_outputs_{datetime.now().strftime('%Y-%m-%d_%H-%
 
 # ========== FEATURES-FIL ==========
 
-FEATURES_FILE = "data/features.xlsx"      # eller "data/raw/features.xlsx"
+FEATURES_FILE = "data/raw/features.xlsx"      # eller "data/raw/features.xlsx"
 FEATURES_SHEET = "Features"          # hvis CSV -> sæt til None
 FEATURES_START_ROW = 0               # 0-baseret (0 = første række er header)
 FEATURES_COL_NAME = "Features"       # præcis kolonnenavnet i arket
 
 # ========== VIRKSOMHEDS-FIL ==========
 
-COMPANIES_FILE = "Branche_og_lead_kartotek.xlsx"
+COMPANIES_FILE = "data/raw/Branche_og_lead_kartotek.xlsx"
 
 COMPANY_SHEET_CONFIG = {
     "410000": {"start_row": 1},
